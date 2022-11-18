@@ -1,0 +1,266 @@
+.App .weather-app {
+  display: flex;
+  padding: 25px;
+  padding-bottom: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.App .form-control {
+  padding: 10px;
+  margin-top: 10px;
+  width: 70%;
+  margin-left: 15%;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  background-color: #f7f7f7;
+  background-image: url('./images.jpg');
+  background-repeat: repeat-y;
+  -webkit-background-composite: initial;
+
+}
+
+.App .Search {
+  margin-bottom: 10px;
+  width: 97%;
+  padding-left: 5%;
+
+}
+
+.App .btn {
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  right: 29%;
+  padding: 9px 0;
+  border: none;
+  height: 47px;
+  width: 10%;
+}
+
+.icon {
+  width: 15%;
+  height: 23%;
+  position: absolute;
+}
+
+.col-7 .temp {
+  font-family: "Chivo", sans-serif;
+  font-size: x-large;
+  height: 20%;
+
+}
+
+.col-7 .temp-number {
+  font-size: 80px;
+  margin-left: 400%;
+  margin-bottom: 20%;
+
+}
+
+.App .cel {
+  color: rgb(128, 128, 128);
+  position: relative;
+  bottom: 40px;
+  font-size: 20px;
+  left: -2px;
+
+}
+
+li {
+  list-style-type: none;
+  width: 150px;
+
+}
+
+.City {
+  width: 120%;
+}
+.City h1{
+  width: 250%;
+  
+}
+
+.col-7 {
+  width: 30%;
+
+}
+
+.main {
+  width: 70%;
+}
+
+.SearchInfo {
+  width: 20%;
+  position: relative;
+}
+
+.col-5 {
+  position: absolute;
+  left: 46%;
+  top: 44%;
+  width: 31%;
+  height: 50%;
+  padding-left: 6%;
+
+}
+
+.col-5 div {
+  display: flex;
+  justify-content: space-around;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  margin-top: 15px;
+  width: 70%;
+  text-align: center;
+  height: 17%;
+  background-color: rgba(0, 16, 38, 0.2);
+}
+.col-5 div h4{
+  padding-top: 10px;
+
+}
+
+.weather-forecast {
+  margin-top:20%;
+}
+
+.fill {
+  padding-bottom: 10px;
+  width: 60px;
+  height: 69px;
+  padding-bottom: 13px;
+}
+.div{
+  padding-top: 10px;
+}
+.col {
+  border: 1px rgba(0, 16, 38, 0.2) solid;
+  margin-left: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: rgba(0, 16, 38, 0.2);
+
+}
+
+.span {
+  font-size: 40px;
+}
+
+.dark-mode {
+  max-width: 800px;
+  margin: 100px auto;
+  display: block;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #FFFF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #2c2c2c;
+  width: 100%;
+  transition: background-color 0.25s ease-in-out;
+  height: 800px;
+
+}
+
+.light-mode {
+  max-width: 800px;
+  margin: 100px auto;
+  display: block;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  transition: background-color 0.25s ease-in-out;
+  height: 800px;
+}
+
+.cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #19a2c1;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-checkbox {
+  padding: 10px;
+}
